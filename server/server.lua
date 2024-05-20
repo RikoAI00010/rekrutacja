@@ -17,7 +17,7 @@ local function savePlayerPositions()
     file:close()
 end
 
---Alternatywa w psotaci wysyłki do API
+--Alternatywa w postaci wysyłki do API
 local function sendPlayerPositionsToAPI()
     local playersData = {}
 
@@ -54,7 +54,7 @@ CreateThread(function()
 end)
 
 
-RegisterCommand('powitanie', function(source, args, rawCommand)
+RegisterCommand('powitanie', function(source)
     TriggerClientEvent('chat:addMessage', source, {
         color = {255, 150, 250},
         multiline = true,
